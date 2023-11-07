@@ -22,10 +22,15 @@ Now, you need to link the object file to create an executable. Use the ld linker
 <img width="842" alt="Ekran Resmi 2023-11-07 18 21 46" src="https://github.com/sensoyyasin/arm64/assets/73845925/7fa49202-f9d1-48a5-a136-18a5602616c2">
 
 hello.o: The object file you want to link.
+
 -o hello: The name of the output executable (you can choose any name you prefer).
+
 -lSystem: Links the System framework.
+
 -syslibroot: Specifies the system library root.
+
 -e _main: Specifies the entry point of the program as _main.
+
 -arch arm64: Sets the architecture to ARM64, which is suitable for M1 chip computers.
 
 ## How to Find the Mac OS SDK Path Using xcrun?
@@ -33,7 +38,9 @@ hello.o: The object file you want to link.
 <img width="440" alt="Ekran Resmi 2023-11-07 18 23 02" src="https://github.com/sensoyyasin/arm64/assets/73845925/19465155-bd84-426c-a27d-d3c6d5f346e7">
 
 xcrun: This is a command-line tool provided by Xcode Command Line Tools.
+
 -sdk macosx: Specifies the SDK you want to find, in this case, the macOS SDK.
+
 --show-sdk-path: Instructs xcrun to display the path to the SDK.
 
 ## Step 4: Run Your Assembly Program

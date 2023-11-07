@@ -1,5 +1,4 @@
-# arm64
-Assemble and run assembly code on an ARM64-based M1 chip computer
+# Assemble and run assembly code on an ARM64-based M1 chip computer
 
 ## Step 1: Write Your Assembly Code
 

@@ -1,6 +1,12 @@
-all:
-	nasm -f macho64 $(source).s -o $(source).o
-	ld -o a.out $(source).o -macos_version_min 10.13 /usr/lib/system/libsystem_kernel.dylib
-	nasm -f macho64 -q -o libc.o libc.s
-	ld -o a.out -e _start -macos_version_min 11.0 libc.o /usr/lib/system/libsystem_kernel.dylib
-	rm $(source)
+all:hello
+
+hello: hello.s
+	@as hello.s -o hello.o
+	@ld hello.o -o hello -l System -syslibroot `xcrun -sdk macosx --show-sdk-path` -e _main -arch arm64
+	@echo "\033[1;92mCompiled succesfully..\033[0m"
+	@./hello
+
+clean:
+	@rm -f hello hello.o
+
+re: clean all

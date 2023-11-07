@@ -4,12 +4,15 @@ Assemble and run assembly code on an ARM64-based M1 chip computer
 Step 1: Write Your Assembly Code
 
 Write your assembly code in a file with a .s extension, for example, hello.s. This code is an example that prints "Hello, World!" to the console.
+
 <img width="586" alt="Ekran Resmi 2023-11-07 18 20 32" src="https://github.com/sensoyyasin/arm64/assets/73845925/4bb69956-06d4-475d-96d1-269ef204ba6c">
 
 Step 2: Assemble the Code
 
 Open your terminal and navigate to the directory where your assembly code is located. Use the as assembler to compile your code:
+
 <img width="157" alt="Ekran Resmi 2023-11-07 18 21 06" src="https://github.com/sensoyyasin/arm64/assets/73845925/6b8265d3-e86f-4c8a-a221-230c1ff5d0c4">
+
 This command assembles your code and produces an object file named hello.o.
 
 Step 3: Link the Object File

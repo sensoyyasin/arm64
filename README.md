@@ -12,7 +12,7 @@ Open your terminal and navigate to the directory where your assembly code is loc
 
 <img width="157" alt="Ekran Resmi 2023-11-07 18 21 06" src="https://github.com/sensoyyasin/arm64/assets/73845925/6b8265d3-e86f-4c8a-a221-230c1ff5d0c4">
 
-This command assembles your code and produces an object file named hello.o.
+This command assembles your code and produces an object file named hello.o
 
 ## Step 3: Link the Object File
 
@@ -24,11 +24,11 @@ hello.o: The object file you want to link.
 
 -o hello: The name of the output executable (you can choose any name you prefer).
 
--lSystem: Links the System framework.
+-l System: Links the System framework.
 
 -syslibroot: Specifies the system library root.
 
--e _main: Specifies the entry point of the program as _main.
+-e _main: Specifies the entry point of the program as _main. We could also use _start instead of _main
 
 -arch arm64: Sets the architecture to ARM64, which is suitable for M1 chip computers.
 
@@ -46,7 +46,7 @@ xcrun: This is a command-line tool provided by Xcode Command Line Tools.
 
 Now that you have successfully linked your assembly code, you can run your program by executing the following command in your terminal:
 
-./hello
+# ./hello
 
 After compiling a C or assembly program, you get your object files. However, these object files must be combined to create the entire program. This is where the "ld" linker program comes into play and merges these object files, resolves the missing links, and produces an executable file.
 

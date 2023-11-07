@@ -55,3 +55,7 @@ In summary, "ld" (linker) is an important software that combines your processor 
 
 <img width="904" alt="Ekran Resmi 2023-11-07 16 20 53" src="https://github.com/sensoyyasin/arm64/assets/73845925/be6ad1a5-0b62-49f8-88f1-ef4191ab262c">
 
+
+Sources:
+https://cs.lmu.edu/~ray/notes/nasmtutorial/
+
